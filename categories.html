@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mdm Wigs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <!-- *******  Owl Carousel Links  ******* -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+/* styles.css */
+
+/* Custom Navigation */
+.custom-nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Change to column layout for small screens */
+    align-items: center;
+    text-align: center; /* Center text on small screens */
+}
+
+.path {
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space between path and options on small screens */
+}
+
+.options {
+    display: flex;
+    flex-direction: column; /* Change to column layout for small screens */
+    gap: 20px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.dropdown label {
+    font-weight: bold;
+}
+
+/* Product Cards */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);    /*make it 2*/
+    gap: 1px;
+    padding: 1px;
+  
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Adjust custom navigation layout for medium-sized screens */
+    .custom-nav {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left; /* Reset text alignment for medium screens */
+    }
+
+    .path {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .options {
+        flex-direction: row;
+        margin-left: auto;
+    }
+
+    .dropdown {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+    
+    /* Display product cards in a grid on medium-sized screens */
+    .product-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-card{
+    width: auto;
+    max-width: 180px;
+    height: 300px;
+}
+ 
+}
+
+@media screen and (min-width: 992px) {
+    /* Adjust custom navigation layout for large screens */
+    .custom-nav {
+        flex-direction: row;
+    }
+
+    .path {
+        margin-right: auto;
+    }
+
+    .options {
+        margin-left: auto;
+    }
+
+    /* Display product cards in a larger grid on large screens */
+    .product-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Locks&Luxe</a></div>
+                <ul class="links">
+                    <li><a href="hero">Home</a></li>
+                    <li><a href="categories.php">Categories</a></li>
+                    <li><a href="deals.php">Deals</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="deals.php">Deals</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+                    <!-- <li><a href="hero">Home</a></li> -->
+                    <a href="#" class="action_btn">Get Started</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>    
+            
+        </div>
+        <div class="dropdown_menu ">
+            <li><a href="hero">Home</a></li>
+                    <li><a href="categories.php">Categories</a></li>
+                    <li><a href="deals.php">Deals</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li>  <a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+    <main>
+        <div class="custom-nav">
+            <div class="path">
+                Home / Categories / Lace Wigs / HD Brazilian Lace Wigs
+            </div>
+            <div class="options">
+                <div class="dropdown">
+                    <label for="texture">Texture:</label>
+                    <select id="texture">
+                        <option value="straight">Straight</option>
+                        <option value="wavy">Wavy</option>
+                        <option value="curly">Curly</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="color">Color:</label>
+                    <select id="color">
+                        <option value="black">Black</option>
+                        <option value="brown">Brown</option>
+                        <option value="blonde">Blonde</option>
+                    </select>
+                </div>
+                <!-- Add more dropdowns as needed -->
+            </div>
+        </div>
+    
+        <div class="product-cards">
+            <!-- Example product card (repeat as needed) -->
+            <div class="product-card">
+                <img src="product-image.jpg" alt="Product Image">
+                <h3>Product Name</h3>
+                <p>Product Description</p>
+                <span>Price: $XX.XX</span>
+            </div>
+            <div class="product-card">
+                <img src="product-image.jpg" alt="Product Image">
+                <h3>Product Name</h3>
+                <p>Product Description</p>
+                <span>Price: $XX.XX</span>
+            </div>
+            <div class="product-card">
+                <img src="product-image.jpg" alt="Product Image">
+                <h3>Product Name</h3>
+                <p>Product Description</p>
+                <span>Price: $XX.XX</span>
+            </div>
+            <div class="product-card">
+                <img src="product-image.jpg" alt="Product Image">
+                <h3>Product Name</h3>
+                <p>Product Description</p>
+                <span>Price: $XX.XX</span>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Luxe</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            10308 Nakuru. Kenya 22193-10212<br>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Media</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Online</a>
+              </li>
+      
+              <li>
+                <a href="#">Print</a>
+              </li>
+                  
+              <li>
+                <a href="#">Alternative Ads</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Our Products</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Hair Products</a>
+              </li>
+              
+              <li>
+                <a href="#">Hair Extensions</a>
+              </li>
+              
+              <li>
+                <a href="#">Brazilian Wig</a>
+              </li>
+              
+              <li>
+                <a href="#">Manicure</a>
+              </li>
+              
+              <li>
+                <a href="#">Pedicure</a>
+              </li>
+              
+              <li>
+                <a href="#">IoT</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2023 Matagaro. All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+          </div>
+        </div>
+      </footer>
+      <script>
+         const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+        
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+      </script>
+      <script type="text/javascript" src="script.js"></script>
+</body> 
+</html>
