@@ -1,0 +1,427 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mdm Wigs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+     img{
+    width: 90%;
+    display: block;
+}
+.main-wrapper{
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details-container{
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.dtl-product-div{
+    margin: 1rem 0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 3px;
+    column-gap: 10px;
+}
+.dtl-product-div-left{
+    padding: 20px;
+}
+.dtl-product-div-right{
+    padding: 20px;
+}
+.dtl-img-container img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.hover-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.hover-container div{
+    border: 2px solid rgba(252, 160, 175, 0.7);
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 0 4px 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    border-color: rgb(255, 145, 163)!important;
+}
+.hover-container div:hover{
+    border-color: rgb(255, 145, 163);
+}
+.hover-container div img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.dtl-product-div-right span{
+    display: block;
+}
+.dtl-product-name{
+    font-size: 26px;
+    margin-bottom: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.dtl-product-price{
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+.dtl-product-rating{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.dtl-product-rating span{
+    margin-right: 6px;
+}
+.dtl-product-description{
+    font-weight: 18px;
+    line-height: 1.6;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 22px;
+}
+.btn-groups{
+    margin-top: 22px;
+}
+.btn-groups button{
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-groups button .fas{
+    margin-right: 8px;
+}
+.add-cart-btn{
+    background-color: #FF9F00;
+    border: 2px solid #FF9F00;
+    margin-right: 8px;
+}
+.add-cart-btn:hover{
+    background-color: #fff;
+    color: #FF9F00;
+}
+.buy-now-btn{
+    background-color: #000;
+    border: 2px solid #000;
+}
+.buy-now-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 992px){
+    .dtl-product-div{
+        grid-template-columns: 100%;
+    }
+    .dtl-product-div-right{
+        text-align: center;
+    }
+    .dtl-product-rating{
+        justify-content: center;
+    }
+    .dtl-product-description{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-groups button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+         </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+      <!-- *******  Owl Carousel Links  ******* -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Locks&Luxe</a></div>
+                <ul class="links">
+                    <li><a href="hero">Home</a></li>
+                    <li><a href="categories.php">Categories</a></li>
+                    <li><a href="deals.php">Deals</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="deals.php">Deals</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+                    <!-- <li><a href="hero">Home</a></li> -->
+                    <a href="#" class="action_btn">Get Started</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>    
+            
+        </div>
+        <div class="dropdown_menu ">
+            <li><a href="hero">Home</a></li>
+                    <li><a href="categories.php">Categories</a></li>
+                    <li><a href="deals.php">Deals</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li>  <a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+<main>
+
+
+<!-- Product Details -->
+
+<div class = "main-wrapper">
+    <div class = "details-container">
+        <div class = "dtl-product-div">
+            <div class = "dtl-product-div-left">
+                <div class = "dtl-img-container">
+                    <img src = "./assets/img/hair-model-.png" alt = "wig">
+                </div>
+                <div class = "hover-container">
+                    <div><img src = "./assets/img/hairfoto.png"></div>
+                    <div><img src = "./assets/img/hairfoto__1.png"></div>
+                    <div><img src = "./assets/img/model-hair.png"></div>
+                    <div><img src = "./assets/img/hair-model-.png"></div>
+                    <div><img src = "./assets/img/hair-model-.png"></div>
+                </div>
+            </div>
+            <div class = "dtl-product-div-right">
+                <span class = "dtl-product-name">(New)HD Brazilian Lace Wigs</span>
+                <span class = "dtl-product-price">KES 2550.00</span>
+                <div class = "dtl-product-rating">
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star"></i></span>
+                    <span><i class = "fas fa-star-half-alt"></i></span>
+                    <span>(350 ratings)</span>
+                </div>
+                <p class = "dtl-product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi ad minima veritatis dolore. Architecto facere dignissimos voluptate fugit ratione molestias quis quidem exercitationem voluptas.</p>
+                <div class = "btn-groups">
+                    <button type = "button" class = "add-cart-btn"><i class = "fas fa-shopping-cart"></i>add to cart</button>
+                    <button type = "button" class = "buy-now-btn"><i class = "fas fa-wallet"></i>buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Product Details -->
+
+</main>
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">Luxe</h1>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      10308 Nakuru. Kenya 22193-10212<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+
+        <li>
+          <a href="#">Print</a>
+        </li>
+            
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Our Products</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="#">Hair Products</a>
+        </li>
+        
+        <li>
+          <a href="#">Hair Extensions</a>
+        </li>
+        
+        <li>
+          <a href="#">Brazilian Wig</a>
+        </li>
+        
+        <li>
+          <a href="#">Manicure</a>
+        </li>
+        
+        <li>
+          <a href="#">Pedicure</a>
+        </li>
+        
+        <li>
+          <a href="#">others</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2023 Matagaro. All rights reserved.</p>
+    
+    <div class="legal__links">
+      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn');
+const toggleBtnIcon = document.querySelector('.toggle_btn i');
+const dropDownMenu = document.querySelector('.dropdown_menu');
+
+toggleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open');
+
+    toggleBtnIcon.classList = isOpen
+    ?'fa-solid fa-xmark'
+    :'fa-solid fa-bars'
+} 
+
+
+ // Variables for the carousel
+const slides = document.querySelectorAll('.carousel-slide');
+let currentSlide = 0;
+
+// Function to show the current slide and hide the others
+function showSlide(index) {
+slides.forEach((slide, i) => {
+if (i === index) {
+slide.style.display = 'flex';
+} else {
+slide.style.display = 'none';
+}
+});
+}
+
+// Function to advance to the next slide
+function nextSlide() {
+currentSlide++;
+if (currentSlide >= slides.length) {
+currentSlide = 0;
+}
+showSlide(currentSlide);
+}
+
+// Automatically advance to the next slide every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Initially show the first slide
+showSlide(currentSlide);
+       
+// details
+const allHoverImages = document.querySelectorAll('.hover-container div img');
+const imgContainer = document.querySelector('.dtl-img-container');
+
+window.addEventListener('DOMContentLoaded', () => {
+    allHoverImages[0].parentElement.classList.add('active');
+});
+
+allHoverImages.forEach((image) => {
+    image.addEventListener('mouseover', () =>{
+        console.log('Mouseover event triggered');
+        imgContainer.querySelector('img').src = image.src;
+        resetActiveImg();
+        image.parentElement.classList.add('active');
+    });
+});
+
+function resetActiveImg(){
+    allHoverImages.forEach((img) => {
+        img.parentElement.classList.remove('active');
+    });
+}
+
+
+
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+    <!--   *****   JQuery Link   *****   -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<!--   *****   Owl Carousel js Link  *****  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!--   *****   Link To Custom Script File   *****   -->
+
+
+</body>
+</html>

@@ -10,120 +10,27 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-.testimonials-section{
-	width: 100%;
-	padding: 0px 8%;
+			.product-image-container {
+  position: relative;
+  overflow: hidden; /* Ensure icons stay within the container */
 }
-.testimonials-section .section-header{
-	max-width: 700px;
-	text-align: center;
-	margin: 30px auto 40px;
+/* Style the product icons */
+.product-icons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1; /* Icons will appear over the image */
+  background-color: rgba(255, 255, 255, 0.8); /* Add a background for better visibility */
+  padding: 5px; /* Adjust padding as needed */
+  /* border-radius: 0 0 0 10px; Rounded corners on the left side */
+  border-radius: 50%;
 }
-.section-header h1{
-	position: relative;
-	font-size: 36px;
-	color: var(--primary-clr);
-}
-.testimonials-container{
-	position: relative;
-}
-.testimonials-container .testimonial-card{
-	padding: 20px;
-}
-.testimonial-card .test-card-body{
-	background-color: whitesmoke;
-	box-shadow: 2px 2px 20px rgba(0,0,0,0.12);
-	padding: 20px;
-}
-.test-card-body .quote{
-	display: flex;
-	align-items: center;
-}
-.test-card-body .quote i{
-	font-size: 45px;
-	color: var(--heading-clr);
-	margin-right: 20px;
-}
-.test-card-body .quote h2{
-	color: var(--heading-clr);
-}
-.test-card-body p{
-	margin: 10px 0px 15px;
-	font-size: 14px;
-	line-height: 1.5;
-	color: var(--text-clr);
-}
-.test-card-body .ratings{
-	margin-top: 20px;
-}
-.test-card-body .ratings i{
-	font-size: 17px;
-	color: var(--primary-clr);
-	cursor: pointer;
-}
-.testimonial-card .profile{
-	display: flex;
-	align-items: center;
-	margin-top: 25px;
-}
-.profile .profile-image{
-	width: 55px;
-	height: 55px;
-	border-radius: 50%;
-	overflow: hidden;
-	margin-right: 15px;
-}
-.profile .profile-image img{
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	object-fit: cover;
-}
-.profile .profile-desc{
-	display: flex;
-	flex-direction: column;
-}
-.profile-desc span:nth-child(1){
-	font-size: 24px;
-	font-weight: bold;
-	color: var(--primary-clr);
-}
-.profile-desc span:nth-child(2){
-	font-size: 15px;
-	color: var(--text-clr);
-}
-.owl-nav{
-	position: absolute;
-	right: 20px;
-	bottom: -10px;
-}
-.owl-nav button{
-	border-radius: 50% !important;
-}
-.owl-nav .owl-prev i,
-.owl-nav .owl-next i{
-	padding: 10px !important;
-	border-radius: 50%;
-	font-size: 18px !important;
-	background-color: var(--card-clr) !important;
-	color: var(--primary-clr);
-	cursor: pointer;
-	transition: 0.4s;
-}
-.owl-nav .owl-prev i:hover,
-.owl-nav .owl-next i:hover{
-	background-color: var(--primary-clr) !important;
-	color: #e9e9e9;
-}
-.owl-dots{
-	margin-top: 15px;
-}
-.owl-dots .owl-dot span{
-	background-color: #434753 !important;
-	padding: 6px !important;
-}
-.owl-dot.active span{
-	background-color: var(--primary-clr) !important;
+
+/* Style the product info */
+.product-info {
+  background-color: #fff; /* Background for product info */
+  padding: 10px;
+  border-radius: 0 0 10px 0; /* Rounded corners on the right side */
 }
   
 
@@ -208,60 +115,127 @@
         </div>
       </section>
 
-      <h2>New Arrivals</h2>
-      <br />
-<section class="product-container">
-    
-  <button class="scroll-button left-button">&#9664;</button>
-  <div class="product-cards">
-  
-    <div class="product-card">
-         <!-- Heart icon for favoriting -->
-      <div class="product-icons">
-        <i class='bx bx-heart' ></i>
-        <i class='bx bx-cart-alt'></i> <!-- Cart icon for adding to cart -->
-      </div>
-      <img src="./assets/img/hair-model-.png" alt="Product 1">
-      <h3>Product 1</h3>
-      <p>Description of Product 1.</p>
-    </div>
-  
-    <div class="product-card">
-              <!-- Heart icon for favoriting -->
-      <div class="product-icons">
-        <i class='bx bx-heart' ></i>
-        <i class='bx bx-cart-alt'></i> <!-- Cart icon for adding to cart -->
-      </div>
-      <img src="./assets/img/hair-model-.png" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>Description of Product 2.</p>
-    </div>
-  
-    <div class="product-card">
-              <!-- Heart icon for favoriting -->
-      <div class="product-icons">
-        <i class='bx bx-heart' ></i>
-        <i class='bx bx-cart-alt'></i> <!-- Cart icon for adding to cart -->
-      </div>
-        <img src="./assets/img/hair-model-.png" alt="Product 2">
-      <h3>Product 3</h3>
-      <p>Description of Product 3.</p>
-    </div>
-    <div class="product-card">
-              <!-- Heart icon for favoriting -->
-      <div class="product-icons">
-        <i class='bx bx-heart' ></i>
-        <i class='bx bx-cart-alt'></i> <!-- Cart icon for adding to cart -->
-      </div>
-        <img src="./assets/img/hair-model-.png" alt="Product 2">
-        <h3>Product 4</h3>
-        <p>Description of Product 4.</p>
-      </div>
-     
-    <!-- Add more product cards as needed -->
-  </div>
-  <button class="scroll-button right-button">&#9654;</button>
-</section>
+      
+     <!-- Product Cards -->
+	       
+	 <section class="products">
+		<h2>Lace Wigs</h2>
+		<div class="all-products">
+			<div class="product">
+				<div class="product-image-container">
+				  <img src="./assets/img/hair-model-.png">
+				  <div class="product-icons">
+					<i class='bx bx-heart'></i>
+					<!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+				  </div>
+				</div>
+				<div class="product-info">
+				  <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+				  <p class="product-price">KES 1129</p>
+				  <a class="product-btn" href="#">Buy Now</a>
+				</div>
+			  </div>
+			  <div class="product">
+				<div class="product-image-container">
+				  <img src="./assets/img/hair-model-.png">
+				  <div class="product-icons">
+					<i class='bx bx-heart'></i>
+					<!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+				  </div>
+				</div>
+				<div class="product-info">
+				  <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+				  <p class="product-price">KES 1129</p>
+				  <a class="product-btn" href="#">Buy Now</a>
+				</div>
+			  </div>
+			  <div class="product">
+				<div class="product-image-container">
+				  <img src="./assets/img/hair-model-.png">
+				  <div class="product-icons">
+					<i class='bx bx-heart'></i>
+					<!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+				  </div>
+				</div>
+				<div class="product-info">
+				  <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+				  <p class="product-price">KES 1129</p>
+				  <a class="product-btn" href="#">Buy Now</a>
+				</div>
+			  </div>
+			  <div class="product">
+				<div class="product-image-container">
+				  <img src="./assets/img/hair-model-.png">
+				  <div class="product-icons">
+					<i class='bx bx-heart'></i>
+					<!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+				  </div>
+				</div>
+				<div class="product-info">
+				  <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+				  <p class="product-price">KES 1129</p>
+				  <a class="product-btn" href="#">Buy Now</a>
+				</div>
+			  </div>
+			  <div class="product">
+				<div class="product-image-container">
+				  <img src="./assets/img/hair-model-.png">
+				  <div class="product-icons">
+					<i class='bx bx-heart'></i>
+					<!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+				  </div>
+				</div>
+				<div class="product-info">
+				  <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+				  <p class="product-price">KES 1129</p>
+				  <a class="product-btn" href="#">Buy Now</a>
+				</div>
+			  </div>
+			  <div class="product">
+				<div class="product-image-container">
+				  <img src="./assets/img/hair-model-.png">
+				  <div class="product-icons">
+					<i class='bx bx-heart'></i>
+					<!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+				  </div>
+				</div>
+				<div class="product-info">
+				  <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+				  <p class="product-price">KES 1129</p>
+				  <a class="product-btn" href="#">Buy Now</a>
+				</div>
+			  </div>
+			  <div class="product">
+				<div class="product-image-container">
+				  <img src="./assets/img/hair-model-.png">
+				  <div class="product-icons">
+					<i class='bx bx-heart'></i>
+					<!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+				  </div>
+				</div>
+				<div class="product-info">
+				  <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+				  <p class="product-price">KES 1129</p>
+				  <a class="product-btn" href="#">Buy Now</a>
+				</div>
+			  </div>
+			  <div class="product">
+				<div class="product-image-container">
+				  <img src="./assets/img/hair-model-.png">
+				  <div class="product-icons">
+					<i class='bx bx-heart'></i>
+					<!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+				  </div>
+				</div>
+				<div class="product-info">
+				  <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+				  <p class="product-price">KES 1129</p>
+				  <a class="product-btn" href="#">Buy Now</a>
+				</div>
+			  </div>
+		</div>
+	</section>
+ <!-- /Product Cards -->
  <!-- /Product Cards -->
 
  <!-- banner section -->
@@ -273,9 +247,9 @@
 <div class="testimonials-section">
 	
 	<!-- Section Header Starts -->
-	<header class="section-header">
+	<!-- <header class="section-header">
 		<h1>What Clients Say</h1>
-	</header>
+	</header> -->
 	<!-- Section Header Ends -->
 
 	<!-- Owl Carousel Slider Starts -->
@@ -456,7 +430,7 @@
 <section class="wrapper">
   <div class="container">
       <div class="img__container">
-      <img src="./assets/img/model2-hair.png" alt="wig" class="img"> 
+      <img src="./assets/img/hairfoto.png" alt="wig" class="img"> 
   </div>   
       <div class="content">
           <h2 class="subtitle">Subscribe today</h2>
@@ -702,23 +676,6 @@
 }); //end ready
 
 
-  // script.js
-// const testimonialCarousel = document.querySelector(".testimonial-carousel");
-// const testimonials = document.querySelectorAll(".testimonial");
-
-// let currentIndex = 0;
-
-// function nextTestimonial() {
-//     currentIndex = (currentIndex + 1) % testimonials.length;
-//     updateCarousel();
-// }
-
-// function updateCarousel() {
-//     const translateXValue = -currentIndex * 100;
-//     testimonialCarousel.style.transform = `translateX(${translateXValue}%)`;
-// }
-
-// setInterval(nextTestimonial, 3000); // Change testimonial every 3 seconds (adjust as needed)
 
     </script>
     <!--   *****   JQuery Link   *****   -->

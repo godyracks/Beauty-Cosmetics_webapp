@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mdm Wigs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .cart-container{
+            width: auto;
+           max-width: 1200px;
+           margin: 0 auto;
+           margin: 1px;
+        }
+
+        
+.cart{
+	margin: 20px 0;
+	background-color: #F1E8E6;
+	padding: 60px 0;
+}
+.total-price{
+	padding-bottom: 15px;
+}
+.cart-item{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 20px; 
+	margin-bottom: 1px;
+   
+}
+.center-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cart-item img{
+	width: 115px;
+}
+.cart-item h5{
+    padding: 0 45px;
+}
+.cart-item .remove-item{
+	width: 25px!important;
+}
+.btn-default{
+	background-color: #fff;
+}
+.cart-item .form-control{
+	background-color: #F6F5FA;
+	border: none;
+    width: 65px;
+    border-radius: 10px!important;
+    font-weight: 700;
+    font-size: 20px;
+}
+.input-group{
+	width: unset;
+	flex-wrap: nowrap;
+}
+.status{
+	text-align: right;
+}
+.check-out{
+    float: right;
+    padding: 10px 30px;
+	font-size: 19px;
+	background-color: #2FBE70;
+	border: none;
+    margin-top: 5px;
+}
+   /* Responsive design */
+   @media screen and (max-width: 768px) {
+    .cart-container{
+            /* width: auto;
+           max-width: 330px;
+           margin: 0 auto;
+           margin: 1px; */
+        }
+       .cart-item{
+        width: auto;
+    max-width: 330px;
+       }
+        }
+
+  
+
+    </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+      <!-- *******  Owl Carousel Links  ******* -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Locks&Luxe</a></div>
+                <ul class="links">
+                    <li><a href="hero">Home</a></li>
+                    <li><a href="categories.php">Categories</a></li>
+                    <li><a href="deals.php">Deals</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="deals.php">Deals</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+                    <!-- <li><a href="hero">Home</a></li> -->
+                    <a href="#" class="action_btn">Get Started</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>    
+            
+        </div>
+        <div class="dropdown_menu ">
+            <li><a href="hero">Home</a></li>
+                    <li><a href="categories.php">Categories</a></li>
+                    <li><a href="deals.php">Deals</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li>  <a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+<main>
+
+
+<!-- Cart -->
+<section>
+    <div class="cart-container">
+       <h2 class="px-5 p-2">My shopping cart</h2>
+       <div class="cart">
+          <div class="col-md-12 col-lg-10 mx-auto">
+             <div class="cart-item">
+                <div class="row">
+                   <div class="col-md-7 center-item">
+                      <img src="./assets/img/hair-model-.png" alt="">
+                      <h5>HD Brazilian Lace Wigs( KES 1219 )</h5>
+                   </div>
+
+                   <div class="col-md-5 center-item">
+                      <div class="input-group number-spinner">
+                         <button id="phone-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                         <input id="phone-number" type="number" min="0" class="form-control text-center" value="1">
+                         <button id="phone-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                      </div>
+                      <h5>KES <span id="phone-total">1219</span> </h5>
+                      <img src="./assets/img/model-hair.png" alt="" class="remove-item">
+                   </div>
+                </div>
+             </div>
+
+             <div class="cart-item">
+                <div class="row">
+                   <div class="col-md-7 center-item mx-auto">
+                      <img src="./assets/img/model-hair.png" alt="">
+                      <h5>HD Brazilian Lace Wigs( KES 5900 )</h5>
+                   </div>
+                   <div class="col-md-5 center-item">
+                      <div class="input-group number-spinner">
+                         <button id="case-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                         <input id="case-number" type="number" min="0" class="form-control text-center" value="1">
+                         <button  id="case-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                      </div>
+                      <h5>KES <span id="case-total">5900</span> </h5>
+                      <img src="images/remove.png" alt="" class="remove-item">
+                   </div>
+                </div>
+             </div>
+
+             <div class="cart-item">
+                <div class="row g-2">
+
+                   <div class="col-6">
+                      <h5>Subtotal: </h5>
+                      <h5>Tax:</h5>
+                      <h5>Total:</h5>
+                   </div>
+
+                   <div class="col-6 status">
+                      <h5>KES<span id="sub-total">1,278</span></h5>
+                      <h5>KES<span id="tax-amount">0</span></h5>
+                      <h5>KES<span id="total-price">1,278</span></h5>
+                   </div>
+                   
+                </div>
+             </div>
+             <div class="col-md-12 pt-4 pb-4">
+                <button type="button" class="btn btn-success check-out">Check Out</button>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+<!-- /Cart -->
+</main>
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">Luxe</h1>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      10308 Nakuru. Kenya 22193-10212<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+
+        <li>
+          <a href="#">Print</a>
+        </li>
+            
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Our Products</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="#">Hair Products</a>
+        </li>
+        
+        <li>
+          <a href="#">Hair Extensions</a>
+        </li>
+        
+        <li>
+          <a href="#">Brazilian Wig</a>
+        </li>
+        
+        <li>
+          <a href="#">Manicure</a>
+        </li>
+        
+        <li>
+          <a href="#">Pedicure</a>
+        </li>
+        
+        <li>
+          <a href="#">IoT</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2023 Matagaro. All rights reserved.</p>
+    
+    <div class="legal__links">
+      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+        
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        } 
+
+
+         // Variables for the carousel
+  const slides = document.querySelectorAll('.carousel-slide');
+  let currentSlide = 0;
+
+  // Function to show the current slide and hide the others
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.style.display = 'flex';
+      } else {
+        slide.style.display = 'none';
+      }
+    });
+  }
+
+  // Function to advance to the next slide
+  function nextSlide() {
+    currentSlide++;
+    if (currentSlide >= slides.length) {
+      currentSlide = 0;
+    }
+    showSlide(currentSlide);
+  }
+
+  // Automatically advance to the next slide every 5 seconds
+  setInterval(nextSlide, 5000);
+
+  // Initially show the first slide
+  showSlide(currentSlide);
+
+  jQuery(document).ready(function ($) {
+	var feedbackSlider = $(".feedback-slider");
+	feedbackSlider.owlCarousel({
+		items: 1,
+		nav: true,
+		dots: true,
+		autoplay: true,
+		loop: true,
+		mouseDrag: true,
+		touchDrag: true,
+		navText: [
+			"<i class='fa fa-long-arrow-left'></i>",
+			"<i class='fa fa-long-arrow-right'></i>"
+		],
+		responsive: {
+			// breakpoint from 767 up
+			767: {
+				nav: true,
+				dots: false
+			}
+		}
+	});
+
+	feedbackSlider.on("translate.owl.carousel", function () {
+		$(".feedback-slider-item h3")
+			.removeClass("animated fadeIn")
+			.css("opacity", "0");
+		$(".feedback-slider-item img, .feedback-slider-thumb img, .customer-rating")
+			.removeClass("animated zoomIn")
+			.css("opacity", "0");
+	});
+
+	feedbackSlider.on("translated.owl.carousel", function () {
+		$(".feedback-slider-item h3").addClass("animated fadeIn").css("opacity", "1");
+		$(".feedback-slider-item img, .feedback-slider-thumb img, .customer-rating")
+			.addClass("animated zoomIn")
+			.css("opacity", "1");
+	});
+	feedbackSlider.on("changed.owl.carousel", function (property) {
+		var current = property.item.index;
+		var prevThumb = $(property.target)
+			.find(".owl-item")
+			.eq(current)
+			.prev()
+			.find("img")
+			.attr("src");
+		var nextThumb = $(property.target)
+			.find(".owl-item")
+			.eq(current)
+			.next()
+			.find("img")
+			.attr("src");
+		var prevRating = $(property.target)
+			.find(".owl-item")
+			.eq(current)
+			.prev()
+			.find("span")
+			.attr("data-rating");
+		var nextRating = $(property.target)
+			.find(".owl-item")
+			.eq(current)
+			.next()
+			.find("span")
+			.attr("data-rating");
+		$(".thumb-prev").find("img").attr("src", prevThumb);
+		$(".thumb-next").find("img").attr("src", nextThumb);
+		$(".thumb-prev")
+			.find("span")
+			.next()
+			.html(prevRating + '<i class="fa fa-star"></i>');
+		$(".thumb-next")
+			.find("span")
+			.next()
+			.html(nextRating + '<i class="fa fa-star"></i>');
+	});
+	$(".thumb-next").on("click", function () {
+		feedbackSlider.trigger("next.owl.carousel", [300]);
+		return false;
+	});
+	$(".thumb-prev").on("click", function () {
+		feedbackSlider.trigger("prev.owl.carousel", [300]);
+		return false;
+	});
+}); //end ready
+
+
+
+    </script>
+    <!--   *****   JQuery Link   *****   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<!--   *****   Owl Carousel js Link  *****  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!--   *****   Link To Custom Script File   *****   -->
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

@@ -23,7 +23,7 @@
 
 /* Custom Navigation */
 .custom-nav {
-    background-color: #f0f0f0;
+    background-color: #F1E8E6;
     padding: 10px;
     display: flex;
     flex-direction: column; /* Change to column layout for small screens */
@@ -31,10 +31,6 @@
     text-align: center; /* Center text on small screens */
 }
 
-.path {
-    font-weight: bold;
-    margin-bottom: 10px; /* Add space between path and options on small screens */
-}
 
 .options {
     display: flex;
@@ -52,14 +48,7 @@
     font-weight: bold;
 }
 
-/* Product Cards */
-.product-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);    /*make it 2*/
-    gap: 1px;
-    padding: 1px;
-  
-}
+
 
 
 
@@ -72,14 +61,11 @@
         text-align: left; /* Reset text alignment for medium screens */
     }
 
-    .path {
-        margin-bottom: 0;
-        margin-right: 20px;
-    }
+
 
     .options {
         flex-direction: row;
-        margin-left: auto;
+        /* margin-left: auto; */
     }
 
     .dropdown {
@@ -87,15 +73,7 @@
         margin-right: 20px;
     }
     
-    /* Display product cards in a grid on medium-sized screens */
-    .product-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .product-card{
-    width: auto;
-    max-width: 180px;
-    height: 300px;
-}
+  
  
 }
 
@@ -105,19 +83,7 @@
         flex-direction: row;
     }
 
-    .path {
-        margin-right: auto;
-    }
-
-    .options {
-        margin-left: auto;
-    }
-
-    /* Display product cards in a larger grid on large screens */
-    .product-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-  
+ 
 }
 
 
@@ -153,9 +119,9 @@
     </header>
     <main>
         <div class="custom-nav">
-            <div class="path">
+            <!-- <div class="path">
                 Home / Categories / Lace Wigs / HD Brazilian Lace Wigs
-            </div>
+            </div> -->
             <div class="options">
                 <div class="dropdown">
                     <label for="texture">Texture:</label>
@@ -177,34 +143,97 @@
             </div>
         </div>
     
-        <div class="product-cards">
-            <!-- Example product card (repeat as needed) -->
-            <div class="product-card">
-                <img src="product-image.jpg" alt="Product Image">
-                <h3>Product Name</h3>
-                <p>Product Description</p>
-                <span>Price: $XX.XX</span>
-            </div>
-            <div class="product-card">
-                <img src="product-image.jpg" alt="Product Image">
-                <h3>Product Name</h3>
-                <p>Product Description</p>
-                <span>Price: $XX.XX</span>
-            </div>
-            <div class="product-card">
-                <img src="product-image.jpg" alt="Product Image">
-                <h3>Product Name</h3>
-                <p>Product Description</p>
-                <span>Price: $XX.XX</span>
-            </div>
-            <div class="product-card">
-                <img src="product-image.jpg" alt="Product Image">
-                <h3>Product Name</h3>
-                <p>Product Description</p>
-                <span>Price: $XX.XX</span>
-            </div>
-            <!-- Add more product cards as needed -->
+         
+	  <section class="products">
+		<h2>Lace Wigs</h2>
+		<div class="all-products">
+			<div class="product">
+        <div class="product-image-container">
+          <img src="./assets/img/hair-model-.png">
+          <div class="product-icons">
+            <i class='bx bx-heart'></i>
+            <!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+          </div>
         </div>
+        <div class="product-info">
+          <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+          <p class="product-price">KES 1129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+        </div>
+      </div>
+			<div class="product">
+        <div class="product-image-container">
+          <img src="./assets/img/hair-model-.png">
+          <div class="product-icons">
+            <i class='bx bx-heart'></i>
+            <!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+          </div>
+        </div>
+        <div class="product-info">
+          <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+          <p class="product-price">KES 1129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-image-container">
+          <img src="./assets/img/hair-model-.png">
+          <div class="product-icons">
+            <i class='bx bx-heart'></i>
+            <!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+          </div>
+        </div>
+        <div class="product-info">
+          <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+          <p class="product-price">KES 1129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+        </div>
+      </div>
+			<div class="product">
+        <div class="product-image-container">
+          <img src="./assets/img/hair-model-.png">
+          <div class="product-icons">
+            <i class='bx bx-heart'></i>
+            <!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+          </div>
+        </div>
+        <div class="product-info">
+          <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+          <p class="product-price">KES 1129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-image-container">
+          <img src="./assets/img/hair-model-.png">
+          <div class="product-icons">
+            <i class='bx bx-heart'></i>
+            <!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+          </div>
+        </div>
+        <div class="product-info">
+          <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+          <p class="product-price">KES 1129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-image-container">
+          <img src="./assets/img/hair-model-.png">
+          <div class="product-icons">
+            <i class='bx bx-heart'></i>
+            <!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
+          </div>
+        </div>
+        <div class="product-info">
+          <h4 class="product-title">HD Brazilian Lace Wigs</h4>
+          <p class="product-price">KES 1129</p>
+          <a class="product-btn" href="#">Buy Now</a>
+        </div>
+      </div>
+		</div>
+	</section>
+ <!-- /Product Cards -->
     </main>
     <footer class="footer">
         <div class="footer__addr">
