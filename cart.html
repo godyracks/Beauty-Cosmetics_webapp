@@ -10,82 +10,147 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        .cart-container{
-            width: auto;
-           max-width: 1200px;
-           margin: 0 auto;
-           margin: 1px;
-        }
+  .cart-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-        
-.cart{
-	margin: 20px 0;
-	background-color: #F1E8E6;
-	padding: 60px 0;
+.cart-wrapper h1 {
+	padding: 20px 0;
+	text-align: center;
+	text-transform: uppercase;
 }
-.total-price{
-	padding-bottom: 15px;
+.project {
+	display: flex;
 }
-.cart-item{
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 15px 20px; 
-	margin-bottom: 1px;
-   
+.shop {
+	flex: 75%;
 }
-.center-item{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+.box {
+	display: flex;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	background: #fff;
+	transition: all .6s ease;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.cart-item img{
-	width: 115px;
-}
-.cart-item h5{
-    padding: 0 45px;
-}
-.cart-item .remove-item{
-	width: 25px!important;
-}
-.btn-default{
-	background-color: #fff;
-}
-.cart-item .form-control{
-	background-color: #F6F5FA;
+.box:hover {
 	border: none;
-    width: 65px;
-    border-radius: 10px!important;
-    font-weight: 700;
-    font-size: 20px;
+	transform: scale(1.01);
 }
-.input-group{
-	width: unset;
-	flex-wrap: nowrap;
+.box img {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
 }
-.status{
-	text-align: right;
+.content {
+	padding: 20px;
+	width: 100%;
+	position: relative;
 }
-.check-out{
-    float: right;
-    padding: 10px 30px;
-	font-size: 19px;
-	background-color: #2FBE70;
-	border: none;
-    margin-top: 5px;
+.content h3 {
+	margin-bottom: 30px;
 }
-   /* Responsive design */
-   @media screen and (max-width: 768px) {
-    .cart-container{
-            /* width: auto;
-           max-width: 330px;
-           margin: 0 auto;
-           margin: 1px; */
-        }
-       .cart-item{
-        width: auto;
-    max-width: 330px;
-       }
-        }
+.content h4 {
+	margin-bottom: 50px;
+}
+.btn-area {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 25px;
+	background-color: #3a71a9;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.btn-area:hover {
+	background-color: #76bfb6;
+	color: #fff;
+	font-weight: 600;
+}
+.unit input {
+	width: 40px;
+	padding: 5px;
+	text-align: center;
+}
+.btn-area i {
+	margin-right: 5px;
+}
+.right-bar {
+    flex: 25%;
+    margin-left: 20px;
+    padding: 20px;
+    height: 400px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.right-bar hr {
+	margin-bottom: 25px;
+}
+.right-bar p {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+.right-bar a {
+    background-color: #76bfb6;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 900;
+}
+.right-bar i {
+    margin-right: 15px;
+}
+.right-bar a:hover {
+    background-color: #3972a7;
+}
+/* Responsive CSS for screens 768px or less */
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .right-bar {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.nav-icons{
+  position: absolute;
+  top:-100px ;
+  font-size: 20px;
+}
+.nav-icons-mobile{
+  position: absolute;
+  bottom:0px ;
+  margin-left: 10px;
+  font-size: 20px;
+  width: auto;
+  margin: 0 auto;
+}
+
 
   
 
@@ -114,6 +179,12 @@
                     <li><a href="contact.php">Contact</a></li>
                 </ul>
                     <!-- <li><a href="hero">Home</a></li> -->
+                    <div class="nav-icons">
+                      <i class='bx bx-search-alt-2' ></i>
+                    <i class='bx bx-user' ></i>
+                    <i class='bx bxs-shopping-bag'></i>
+                    </div>
+                    
                     <a href="#" class="action_btn">Get Started</a>
                     <div class="toggle_btn">
                         <i class="fa-solid fa-bars"></i>
@@ -125,80 +196,55 @@
                     <li><a href="categories.php">Categories</a></li>
                     <li><a href="deals.php">Deals</a></li>
                     <li><a href="contact.php">Contact</a></li>
+                    <div  class="nav-icons-mobile">
+                      </li><i class='bx bx-search-alt-2' ></i>
+                      <i class='bx bx-user' ></i>
+                      <i class='bx bxs-shopping-bag'></i>
+                    </div>
                     <li>  <a href="#" class="action_btn">Get Started</a></li>
+                  
         </div>
     </header>
 <main>
 
 
 <!-- Cart -->
-<section>
-    <div class="cart-container">
-       <h2 class="px-5 p-2">My shopping cart</h2>
-       <div class="cart">
-          <div class="col-md-12 col-lg-10 mx-auto">
-             <div class="cart-item">
-                <div class="row">
-                   <div class="col-md-7 center-item">
-                      <img src="./assets/img/hair-model-.png" alt="">
-                      <h5>HD Brazilian Lace Wigs( KES 1219 )</h5>
-                   </div>
-
-                   <div class="col-md-5 center-item">
-                      <div class="input-group number-spinner">
-                         <button id="phone-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
-                         <input id="phone-number" type="number" min="0" class="form-control text-center" value="1">
-                         <button id="phone-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
-                      </div>
-                      <h5>KES <span id="phone-total">1219</span> </h5>
-                      <img src="./assets/img/model-hair.png" alt="" class="remove-item">
-                   </div>
-                </div>
-             </div>
-
-             <div class="cart-item">
-                <div class="row">
-                   <div class="col-md-7 center-item mx-auto">
-                      <img src="./assets/img/model-hair.png" alt="">
-                      <h5>HD Brazilian Lace Wigs( KES 5900 )</h5>
-                   </div>
-                   <div class="col-md-5 center-item">
-                      <div class="input-group number-spinner">
-                         <button id="case-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
-                         <input id="case-number" type="number" min="0" class="form-control text-center" value="1">
-                         <button  id="case-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
-
-                      </div>
-                      <h5>KES <span id="case-total">5900</span> </h5>
-                      <img src="images/remove.png" alt="" class="remove-item">
-                   </div>
-                </div>
-             </div>
-
-             <div class="cart-item">
-                <div class="row g-2">
-
-                   <div class="col-6">
-                      <h5>Subtotal: </h5>
-                      <h5>Tax:</h5>
-                      <h5>Total:</h5>
-                   </div>
-
-                   <div class="col-6 status">
-                      <h5>KES<span id="sub-total">1,278</span></h5>
-                      <h5>KES<span id="tax-amount">0</span></h5>
-                      <h5>KES<span id="total-price">1,278</span></h5>
-                   </div>
-                   
-                </div>
-             </div>
-             <div class="col-md-12 pt-4 pb-4">
-                <button type="button" class="btn btn-success check-out">Check Out</button>
-             </div>
-          </div>
-       </div>
+<div class="cart-wrapper">
+  <h1>Shopping Cart</h1>
+  <div class="project">
+    <div class="shop">
+     
+      <div class="box">
+        <img src="./assets/img/hairfoto__1.png">
+        <div class="content">
+          <h3>Man's Watches</h3>
+          <h4>Price: KES 14500</h4>
+          <p class="unit">Quantity: <input name="" value="1"></p>
+          <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="./assets/img/hair-model-.png">
+        <div class="content">
+          <h3>Man's Watches</h3>
+          <h4>Price: KES 14500</h4>
+          <p class="unit">Quantity: <input name="" value="1"></p>
+          <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+        </div>
+      </div>
+     
     </div>
- </section>
+    <div class="right-bar">
+      <p><span>Subtotal</span> <span>KES 14500</span></p>
+      <hr>
+      <p><span>Tax (5%)</span> <span>KES 1450</span></p>
+      <hr>
+      <p><span>Shipping</span> <span>KES 1450</span></p>
+      <hr>
+      <p><span>Total</span> <span>KES 145</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
+    </div>
+  </div>
+</div>
 <!-- /Cart -->
 </main>
 <footer class="footer">
@@ -258,7 +304,7 @@
         </li>
         
         <li>
-          <a href="#">IoT</a>
+          <a href="#">others</a>
         </li>
       </ul>
     </li>

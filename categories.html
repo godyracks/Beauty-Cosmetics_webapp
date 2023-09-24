@@ -21,70 +21,7 @@
     <style>
 /* styles.css */
 
-/* Custom Navigation */
-.custom-nav {
-    background-color: #F1E8E6;
-    padding: 10px;
-    display: flex;
-    flex-direction: column; /* Change to column layout for small screens */
-    align-items: center;
-    text-align: center; /* Center text on small screens */
-}
 
-
-.options {
-    display: flex;
-    flex-direction: column; /* Change to column layout for small screens */
-    gap: 20px;
-}
-
-.dropdown {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.dropdown label {
-    font-weight: bold;
-}
-
-
-
-
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    /* Adjust custom navigation layout for medium-sized screens */
-    .custom-nav {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left; /* Reset text alignment for medium screens */
-    }
-
-
-
-    .options {
-        flex-direction: row;
-        /* margin-left: auto; */
-    }
-
-    .dropdown {
-        margin-bottom: 0;
-        margin-right: 20px;
-    }
-    
-  
- 
-}
-
-@media screen and (min-width: 992px) {
-    /* Adjust custom navigation layout for large screens */
-    .custom-nav {
-        flex-direction: row;
-    }
-
- 
-}
 
 
     </style>
@@ -149,11 +86,14 @@
 		<div class="all-products">
 			<div class="product">
         <div class="product-image-container">
+          <a href="details.html" style="background-color: white;">
           <img src="./assets/img/hair-model-.png">
+     
           <div class="product-icons">
             <i class='bx bx-heart'></i>
             <!-- <i class='bx bx-cart-alt'></i> Cart icon for adding to cart -->
           </div>
+        </a>
         </div>
         <div class="product-info">
           <h4 class="product-title">HD Brazilian Lace Wigs</h4>

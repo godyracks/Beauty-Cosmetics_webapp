@@ -274,17 +274,7 @@ p {
 	transition: all 0.3s;
 }
 
-.product a:link, .product a:visited{
-	color: #ececec;
-	display: inline-block;
-	text-decoration: none;
-	background-color: #2c3e50;
-	padding: 1.2rem 3rem;
-	border-radius: 1rem;
-	margin-top: 1rem;
-	font-size: 14px;
-	transition: all 0.2s;
-}
+
 
 .product a:hover{
 	transform: scale(1.1);
@@ -315,7 +305,7 @@ p {
 /* Style the product icons */
 .product-icons {
   position: absolute;
-  bottom: 0;
+  bottom: 55px;
   right: 0;
   z-index: 1; /* Icons will appear over the image */
   background-color: rgba(255, 255, 255, 0.8); /* Add a background for better visibility */
@@ -332,11 +322,19 @@ p {
   /* max-height: 60px; */
 }
 .product-btn{
-  /* width: auto;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
- margin-bottom: 40px; */
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.wig-category{
+  background-color: #fff;
 }
   
 
@@ -468,6 +466,209 @@ p {
     height: auto;
 }
 
+/* Custom Navigation */
+.custom-nav {
+  background-color: #F1E8E6;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Change to column layout for small screens */
+  align-items: center;
+  text-align: center; /* Center text on small screens */
+}
+
+
+.options {
+  display: flex;
+  flex-direction: column; /* Change to column layout for small screens */
+  gap: 20px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.dropdown label {
+  font-weight: bold;
+}
+
+/* CART TEMP */
+.cart-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cart-wrapper h1 {
+padding: 20px 0;
+text-align: center;
+text-transform: uppercase;
+}
+.project {
+display: flex;
+}
+.shop {
+flex: 75%;
+}
+.box {
+display: flex;
+width: 100%;
+height: 200px;
+overflow: hidden;
+margin-bottom: 20px;
+background: #fff;
+transition: all .6s ease;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.box:hover {
+border: none;
+transform: scale(1.01);
+}
+.box img {
+width: 300px;
+height: 200px;
+object-fit: cover;
+}
+.content {
+padding: 20px;
+width: 100%;
+position: relative;
+}
+.content h3 {
+margin-bottom: 30px;
+}
+.content h4 {
+margin-bottom: 50px;
+}
+.btn-area {
+position: absolute;
+bottom: 20px;
+right: 20px;
+padding: 2px 5px;
+background-color: #3a71a9;
+color: white;
+cursor: pointer;
+border-radius: 5px;
+}
+.btn-area:hover {
+background-color: #76bfb6;
+color: #fff;
+font-weight: 600;
+}
+.unit input {
+width: 40px;
+padding: 5px;
+text-align: center;
+}
+.btn-area i {
+margin-right: 5px;
+}
+.right-bar {
+  flex: 25%;
+  margin-left: 20px;
+  padding: 20px;
+  height: 400px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.right-bar hr {
+margin-bottom: 25px;
+}
+.right-bar p {
+display: flex;
+justify-content: space-between;
+margin-bottom: 30px;
+font-size: 20px;
+}
+.right-bar a {
+  background-color: #76bfb6;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 900;
+}
+.right-bar i {
+  margin-right: 15px;
+}
+.right-bar a:hover {
+  background-color: #3972a7;
+}
+
+.cart-image{
+  width: 40px;
+  height: 40px;
+}
+/* Responsive CSS for screens 768px or less */
+
+@media (max-width: 768px) {
+  .project {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .shop {
+      width: 100%;
+  }
+
+  .box {
+      width: 100%;
+      margin-right: 0;
+  }
+  .box img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    }
+
+  .right-bar {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%;
+  }
+}
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Adjust custom navigation layout for medium-sized screens */
+  .custom-nav {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left; /* Reset text alignment for medium screens */
+  }
+
+
+
+  .options {
+      flex-direction: row;
+      /* margin-left: auto; */
+  }
+
+  .dropdown {
+      margin-bottom: 0;
+      margin-right: 20px;
+  }
+  
+
+
+}
+
+@media screen and (min-width: 992px) {
+  /* Adjust custom navigation layout for large screens */
+  .custom-nav {
+      flex-direction: row;
+  }
+
+
+}
+
 
 /* Testimonials Section */
 
@@ -515,10 +716,10 @@ p {
     width: 100%;
     height: auto;
     border-radius: 1em 1em 0 0;
-    -o-object-fit: cover;
+    /* -o-object-fit: cover;
        object-fit: cover;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+            transform: translateY(-50%); */
   }
   
   .img__container {
