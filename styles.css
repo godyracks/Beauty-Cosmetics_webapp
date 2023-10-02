@@ -200,17 +200,25 @@ header {
     align-items: center;
     justify-content: center;
     padding-left: 0;
+    /* margin-bottom: 105px; */
+    margin-left: -130px;
+}
+
+.black-strip-text{
+  color: #fff;
+  margin-bottom: 20px;
+  margin-left: 0;
 }
 
 p {
-    margin-left: 60px;
+    /* margin-left: 60px; */
     /* Adjust as needed */
-    color: #fff;
+    /* color: #fff; */
 
 }
 
 .lower {
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 
 .hero-text{

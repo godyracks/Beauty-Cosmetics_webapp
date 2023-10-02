@@ -38,7 +38,12 @@ if (!$result) {
                     <h4 class="product-title"><?php echo $row['product_name']; ?></h4>
                     <p class="product-price">KES <?php echo number_format($row['price'], 2); ?></p>
                     <!-- <a class="product-btn" href="#">Buy Now</a> -->
-                    <a class="product-btn" href="#">Add To Bag </a> <!-- <i class='bx bx-cart'></i> -->
+                    <form action="../cart/add_to_cart.php" method="POST">
+    <input type="hidden" name="product_id" value="<?php echo $row['product_id']; ?>">
+    <input type="number" name="quantity" value="1" min="1">
+    <button type="submit" name="add_to_cart" class="product-btn" >Add To Bag</button>
+</form>
+
                 </div>
             </div>
         <?php endwhile; ?>

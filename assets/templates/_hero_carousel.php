@@ -4,9 +4,9 @@
           <div class="carousel-slide">
             <div class="left">
               <div class="upper">
-                <!-- <div class="black-strip">
-                    <p>Latest Deals</p>
-                </div> -->
+                <div class="black-strip">
+                    <p class="black-strip-text">LATEST DEALS</p>
+                </div>
                 
               </div>
               <div class="lower">
@@ -23,9 +23,9 @@
           <div class="carousel-slide">
             <div class="left">
               <div class="upper">
-                <!-- <div class="black-strip">
-                    <p>Latest Deals</p>
-                </div> -->
+                <div class="black-strip">
+                    <p class="black-strip-text">LATEST DEALS</p>
+                </div>
               </div>
               <div class="lower">
                 <h3 class="hero-text">20% DISCOUNT ON LACE WIGS</h3>

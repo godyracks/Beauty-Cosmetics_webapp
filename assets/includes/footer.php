@@ -1,7 +1,7 @@
 </main>
 <footer class="footer">
   <div class="footer__addr">
-    <h1 class="footer__logo">Luxe</h1>
+    <h1 class="footer__logo">Kemi's Collection</h1>
         
     <h2>Contact</h2>
     

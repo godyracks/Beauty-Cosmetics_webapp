@@ -1,6 +1,6 @@
 <?php
 //ob_start();
-//session_start();
+
 
 $host = 'localhost';
 $username = 'root';
