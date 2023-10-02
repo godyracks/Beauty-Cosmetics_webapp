@@ -59,6 +59,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
 ?>
+<style>
+    .product {
+        /* Style for the product card */
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .image-container {
+        /* Enable horizontal scrolling */
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .image-container img {
+        /* Style for individual images */
+        width: 100px; /* Adjust the image width as needed */
+        height: auto;
+        margin-right: 10px; /* Add spacing between images */
+    }
+</style>
+
 
 
     <h1>Admin Panel</h1>
@@ -83,34 +105,50 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </form>
     <div id="productList">
      
-        <!-- Product list will be displayed here -->
-<?php while ($row = $result->fetch_assoc()) : ?>
-    <div class="product">
-        <?php
-        // Retrieve the first image URL for the product
-        $productId = $row['product_id'];
-        $imageSql = "SELECT image_url FROM product_images WHERE product_id = ? LIMIT 1";
-        $stmt = $conn->prepare($imageSql);
-        $stmt->bind_param("i", $productId);
-        $stmt->execute();
-        $imageResult = $stmt->get_result();
+<!-- Product list will be displayed here -->
+<?php
+$previousProductId = null; // Keep track of the previous product ID
+while ($row = $result->fetch_assoc()) :
+    $productId = $row['product_id'];
+    if ($productId !== $previousProductId) {
+        // Only display a product card if it's a new product
+?>
+        <div class="product">
+            <h2><?php echo $row['product_name']; ?></h2>
+            <p>Category: <?php echo $row['category']; ?></p>
+            <p>Price: KES <?php echo $row['price']; ?></p>
 
-        if ($imageResult->num_rows === 1) {
-            $imageRow = $imageResult->fetch_assoc();
-            $firstImageUrl = $imageRow['image_url'];
-        } else {
-            // No image found, use a default image
-            $firstImageUrl = "default_image.jpg";
-        }
-        ?>
-        <img src="<?php echo $firstImageUrl; ?>" alt="<?php echo $row['product_name']; ?>">
-        <button class="delete-button" onclick="deleteProduct(<?php echo $row['product_id']; ?>)">Delete</button>
-        <button class="update-button" onclick="updateProduct(<?php echo $row['product_id']; ?>)">Update</button>
-    </div>
-<?php endwhile; ?>
+            <div class="image-container">
+                <?php
+                // Retrieve all image URLs for the product
+                $imageSql = "SELECT image_url FROM product_images WHERE product_id = ?";
+                $stmt = $conn->prepare($imageSql);
+                $stmt->bind_param("i", $productId);
+                $stmt->execute();
+                $imageResult = $stmt->get_result();
+
+                while ($imageRow = $imageResult->fetch_assoc()) :
+                    $imageUrl = $imageRow['image_url'];
+                ?>
+                    <img src="<?php echo $imageUrl; ?>" alt="<?php echo $row['product_name']; ?>">
+                <?php endwhile; ?>
+            </div>
+
+            <button class="delete-button" onclick="deleteProduct(<?php echo $productId; ?>)">Delete</button>
+            <button class="update-button" onclick="updateProduct(<?php echo $productId; ?>)">Update</button>
+        </div>
+<?php
+    }
+    $previousProductId = $productId;
+endwhile;
+?>
+
+
+
 
 </div>
-
+<!-- Add a "View All Products" button -->
+<button onclick="viewAllProducts()">View All Products</button>
     </div>
     <!-- JavaScript functions for handling delete and update -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -140,6 +178,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     function updateProduct(productId) {
         // Redirect to a product update page with the product ID
         window.location.href = "update_product.php?product_id=" + productId;
+    }
+
+    function viewAllProducts() {
+        // Redirect to the "View All Products" page
+        window.location.href = "admin-all-products.php";
     }
 </script>
 
