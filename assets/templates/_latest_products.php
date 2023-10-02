@@ -22,7 +22,7 @@ if (!$result) {
 ?>
 
 <section class="products">
-    <h2 style="background-color: #fff;">Lace Wigs</h2>
+    <h2 style="background-color: #fff;">Latest Products</h2>
     <div class="all-products">
         <?php while ($row = $result->fetch_assoc()) : ?>
             <div class="product">
@@ -37,8 +37,7 @@ if (!$result) {
                 <div class="product-info">
                     <h4 class="product-title"><?php echo $row['product_name']; ?></h4>
                     <p class="product-price">KES <?php echo number_format($row['price'], 2); ?></p>
-                    <!-- <a class="product-btn" href="#">Buy Now</a> -->
-                    <a class="product-btn" href="#">Add To Bag </a> <!-- <i class='bx bx-cart'></i> -->
+                    <a class="product-btn" href="#">Add To Bag </a>
                 </div>
             </div>
         <?php endwhile; ?>

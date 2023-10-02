@@ -1,3 +1,47 @@
+<?php
+include_once('../assets/setup/db.php');
+
+if (isset($_GET['id'])) {
+    $product_id = $_GET['id'];
+
+    // Assuming you are using MySQLi for database connection
+    $sql = "SELECT p.*, i.image_url 
+            FROM products p
+            JOIN product_images i ON p.product_id = i.product_id
+            WHERE p.product_id = $product_id";
+
+    $result = $conn->query($sql);
+
+    // Check for query execution success
+    if (!$result) {
+        die("Query failed: " . $conn->error);
+    }
+
+    $product = $result->fetch_assoc();
+
+    // Fetch all product images for the hover container
+    $sql = "SELECT image_url FROM product_images WHERE product_id = $product_id";
+    $images_result = $conn->query($sql);
+
+    // Check for query execution success
+    if (!$images_result) {
+        die("Query failed: " . $conn->error);
+    }
+
+    $product_images = [];
+    while ($row = $images_result->fetch_assoc()) {
+        $product_images[] = $row['image_url'];
+    }
+} else {
+    // Handle the case where no product ID is provided in the URL
+    // Redirect or display an error message
+}
+?>
+
+
+
+
+
 <style>
         img{
     width: 100%;
@@ -154,26 +198,24 @@
 
 
 <!-- Product Details -->
-
-<div class = "main-wrapper">
-    <div class = "details-container">
-        <div class = "dtl-product-div">
-            <div class = "dtl-product-div-left">
-                <div class = "dtl-img-container">
-                    <img src = "../assets/img/black-wig-1.png" alt = "wig">
+<div class="main-wrapper">
+        <div class="details-container">
+            <div class="dtl-product-div">
+                <div class="dtl-product-div-left">
+                    <div class="dtl-img-container">
+                        <img src="../uploads/<?php echo $product['image_url']; ?>" alt="wig">
+                    </div>
+                    <div class="hover-container">
+                        <?php foreach ($product_images as $image) : ?>
+                            <div><img src="../uploads/<?php echo $image; ?>"></div>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
-                <div class = "hover-container">
-                    <div><img src = "../assets/img/black-wig-1.png"></div>
-                    <div><img src = "../assets/img/black-wig-2.png"></div>
-                    <div><img src = "../assets/img/black-wig-3.png"></div>
-                    <!-- <div><img src = "../assets/img/black-wig-4.png"></div> -->
-                    <!-- <div><img src = "../assets/img/black-wig-5.png"></div> -->
-                </div>
-            </div>
-            <div class = "dtl-product-div-right">
-                <span class = "dtl-product-name">(New)HD Brazilian Lace Wigs</span>
-                <span class = "dtl-product-price">KES 2550.00</span>
-                <div class = "dtl-product-rating">
+                <div class="dtl-product-div-right">
+                    <span class="dtl-product-name"><?php echo $product['product_name']; ?></span>
+                    <span class="dtl-product-price">KES <?php echo number_format($product['price'], 2); ?></span>
+                   <!-- product star rating -->
+                    <div class = "dtl-product-rating">
                     <span><i class = "fas fa-star"></i></span>
                     <span><i class = "fas fa-star"></i></span>
                     <span><i class = "fas fa-star"></i></span>
@@ -186,11 +228,12 @@
                     <button type = "button" class = "add-cart-btn"><i class = "fas fa-shopping-cart"></i>add to cart</button>
                     <a href="../cart"><button type = "button" class = "buy-now-btn"><i class = "fas fa-wallet"></i>buy now</button></a>
                 </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 <!-- Product Details -->
+
 
 <script>
 // details

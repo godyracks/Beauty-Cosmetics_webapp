@@ -10,9 +10,9 @@
                 
               </div>
               <div class="lower">
-                <h3>20% DISCOUNT ON LACE WIGS</h3>
-                <p>Additional text goes here.</p>
-                <a href="#" class="shop-wigs-now-button">Shop Now</a>
+                <h3 class="hero-text">20% DISCOUNT ON LACE WIGS</h3>
+                <p class="hero-subtext">Get youself amazing deal on beautiful, voluminous wigs that do not even dare to disappoint. Look through now and see what you can snag.</p>
+                <a href="#" class="shop-wigs-now-button">SHOP NOW</a>
               </div>
             </div>
             <div class="right">
@@ -28,9 +28,9 @@
                 </div> -->
               </div>
               <div class="lower">
-                <h3>20% DISCOUNT ON LACE WIGS</h3>
-                <p>More details go here.</p>
-                <a href="#" class="shop-wigs-now-button">Shop Now</a>
+                <h3 class="hero-text">20% DISCOUNT ON LACE WIGS</h3>
+                <p class="hero-subtext">Discover fantastic bargains on stunning, voluminous wigs that are guaranteed to exceed your expectations. Browse now to find your perfect catch.</p>
+                <a href="#" class="shop-wigs-now-button">SHOP NOW</a>
               </div>
             </div>
             <div class="right">

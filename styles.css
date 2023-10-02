@@ -8,7 +8,8 @@
 body {
     height: 100vh;
     /* background-color: #be5683; */
-    background-color: #F1E8E6;
+    /* background-color: #F1E8E6; */
+    background-color: #e76d89;
 
 }
 
@@ -19,7 +20,7 @@ li {
 
 a {
     text-decoration: none;
-    color:#be5683;
+    color:#fff;
     font-size: 1rem;
 }
 
@@ -42,14 +43,24 @@ header {
     align-items: center;
     justify-content: space-between;
     /* background-color: #be5683; */
-    background-color: #F1E8E6;
+    /* background-color: #F1E8E6; */
+    background-color: #e76d89;
 
 }
 
-.navbar .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
+.logo{
+  margin-left: 0%;
 }
+
+.business-logo{
+  background-color: #fff;
+  margin-top: 20px;
+  width: auto;
+  height: 70px;
+  padding: 1px;
+}
+
+
 
 .navbar .links {
     display: flex;
@@ -57,10 +68,33 @@ header {
 }
 
 .navbar .toggle_btn {
-    color: #be5683;
+    color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+}
+
+
+/* Add styles for box-icons */
+.box-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.box-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.box-icon i {
+  font-size: 24px;
+}
+
+.box-icon:hover {
+  transform: scale(1.1);
 }
 
 .action_btn {
@@ -95,10 +129,10 @@ header {
     height: 0;
     width: 300px;
     background-color: #aba4a2;
-    /* backdrop-filter: blur(15px); */
+    backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
-    /* transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 1000;
 }
 
@@ -123,7 +157,8 @@ header {
 /* HERO */
 #hero {
     /* background-color: #be5683; */
-    background-color: #F1E8E6;
+    /* background-color: #F1E8E6; */
+    background-color: #e76d89;
     padding: 3rem 0;
     
 }
@@ -176,6 +211,13 @@ p {
 
 .lower {
     margin-top: 1rem;
+}
+
+.hero-text{
+  color: #fff;
+}
+.hero-subtext{
+  color: #fff;
 }
 
 h3 {
@@ -289,15 +331,17 @@ p {
     border-radius: 50%;
     width: auto;
     font-size: 20px;
+    color: #e76d89;
 }
 
-.bx-cart-alt {
+.bx-cart {
     padding: 0.5rem;
-    border: 1px solid pink;
-    border-radius: 50%;
-    background-color: whitesmoke;
+    /* border: 1px solid pink; */
+    /* border-radius: 50%; */
+    /* background-color: whitesmoke; */
     width: auto;
     font-size: 20px;
+    color: #fff;
 }
 
 .product-image-container {
@@ -328,11 +372,12 @@ p {
 	display: inline-block;
 	text-decoration: none;
 	background-color: #2c3e50;
-	padding: 1.2rem 3rem;
+	padding: 1rem 1.2rem;
 	border-radius: 1rem;
 	margin-top: 1rem;
 	font-size: 14px;
 	transition: all 0.2s;
+  width: 120px;
 }
 
 .wig-category{
@@ -420,21 +465,24 @@ p {
 }
 
 .shop-wigs-now-button {
-    background-color: orange;
-    color: #fff;
-    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #e76d89;
+    
+    padding: 1rem 2.1rem;
     text-decoration: none;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s ease;
     display: inline-block;
-    margin-top: 0rem;
+    margin-top: 2rem;
     margin-left: 0rem;
+    height: 50px;
+    width: 150px;
 }
 .shop-wigs-now-button:visited{
-    color: #fff;
+    color: #e76d89;
 }
 
 .shop-now-button:hover {
@@ -651,7 +699,9 @@ font-size: 20px;
       text-align: left; /* Reset text alignment for medium screens */
   }
 
-
+.desktop{
+  display: none;
+}
 
   .options {
       flex-direction: row;
