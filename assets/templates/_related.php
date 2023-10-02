@@ -1,5 +1,5 @@
 <section class="products">
-		<h2 style="background-color: #fff;">Most Related Frequently Purchased</h2>
+		<h2 style="background-color: #fff;">Most Frequently Purchased</h2>
 		<div class="all-products">
 			<div class="product">
         <div class="product-image-container">

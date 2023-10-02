@@ -99,6 +99,7 @@ header {
     border-radius: 10px;
     overflow: hidden;
     /* transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    z-index: 1000;
 }
 
 .dropdown_menu.open {
@@ -124,6 +125,7 @@ header {
     /* background-color: #be5683; */
     background-color: #F1E8E6;
     padding: 3rem 0;
+    
 }
 
 .hero-carousel {
@@ -305,7 +307,7 @@ p {
 /* Style the product icons */
 .product-icons {
   position: absolute;
-  bottom: 55px;
+  bottom: 15px; 
   right: 0;
   z-index: 1; /* Icons will appear over the image */
   background-color: rgba(255, 255, 255, 0.8); /* Add a background for better visibility */
@@ -602,6 +604,11 @@ font-size: 20px;
   width: 40px;
   height: 40px;
 }
+
+
+
+/* ADMIN PANEL */
+
 /* Responsive CSS for screens 768px or less */
 
 @media (max-width: 768px) {
@@ -933,10 +940,16 @@ font-size: 20px;
 
     .dropdown_menu {
         display: block;
+        z-index: 1000;
+    }
+
+    #hero{
+      z-index: 999;
     }
 
     .carousel-slide {
         flex-direction: column;
+        z-index: 999;
     }
 
     .left,
