@@ -56,7 +56,7 @@
         </li>
         
         <li>
-          <a href="#">IoT</a>
+          <a href="#">Others</a>
         </li>
       </ul>
     </li>
@@ -81,10 +81,10 @@
   </ul>
   
   <div class="legal">
-    <p>&copy; 2023 Matagaro. All rights reserved.</p>
+    <p>&copy; 2023 Kemis Collection. All rights reserved.</p>
     
     <div class="legal__links">
-      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+      <span>Made by <span class="heart">Godfrey</span> Matagaro</span>
     </div>
   </div>
 </footer>

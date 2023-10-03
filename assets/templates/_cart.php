@@ -49,10 +49,10 @@ if (mysqli_stmt_execute($stmt)) {
     if (mysqli_num_rows($result) > 0) {
         ?>
         <!-- Cart -->
-        <div class="cart-wrapper">
+        <div class="cart-wrapper" style="background-color: #fff;">
             <h1>Shopping Bag</h1>
             <div class="project">
-                <form method="post" action="view-cart.php">
+                <form method="post" action="">
                 <div class="shop">
                     <?php
                     // Loop through cart items and display them

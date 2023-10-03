@@ -45,11 +45,13 @@ header {
     /* background-color: #be5683; */
     /* background-color: #F1E8E6; */
     background-color: #e76d89;
+    margin-left: -1px;
 
 }
 
 .logo{
   margin-left: 0%;
+  height: 70px;
 }
 
 .business-logo{
@@ -555,6 +557,7 @@ p {
 .cart-wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .cart-wrapper h1 {
@@ -862,7 +865,7 @@ font-size: 20px;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #2f2f2f;
-    background-color: #fff;
+    background-color: #F1E8E6;
     border-top: 1px solid #e5e5e5;
   }
   
